@@ -1,0 +1,17 @@
+Structure Plan:
+Get oAuth token, implement with spotipy API
+Query library, import IDs into list (primary key)
+Query metadata, store BPM in list in same order so ID position can be used as primary key (i.e: looping i times, query item i in list)
+Loop through BPM list, if > than current highest BPM OR < lowest BPM - set var as that, else escape
+Calculate difference, divide by 10, create 10 lists and store their max/min BPM
+For each ID in list:
+    figure out which list it should be in
+    amend with ID
+Loop through lists
+    If <5 entries, merge with next list
+Write each playlist to spotify
+profit
+
+To Do:
+Authentication
+Define POST request function

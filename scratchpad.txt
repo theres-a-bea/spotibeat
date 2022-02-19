@@ -1,0 +1,16 @@
+https://developer.spotify.com/documentation/web-api/reference/#/operations/add-tracks-to-playlist
+curl --request POST \
+  --url https://api.spotify.com/v1/playlists/playlist_id/tracks \
+  --header 'Authorization: ' \
+  --header 'Content-Type: application/json' \
+  --data '{
+  "uris": [
+    "string"
+  ],
+  "position": 0
+}'
+
+API playlist_id needs to be defined
+
+Data EG:
+{"uris": ["spotify:track:4iV5W9uYEdYUVa79Axb7Rh","spotify:track:1301WleyT98MSxVHPZCA6M"]}
